@@ -24,5 +24,6 @@ class Pokemon
     SQL
     array = db.execute(sql, id).first
     student = self.new(id: array[0], name: array[1], type: array[2], db: db)
+    student
   end
 end
