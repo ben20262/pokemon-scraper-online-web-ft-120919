@@ -13,6 +13,6 @@ class Pokemon
     sql = <<-SQL
       INSERT INTO pokemon (name, type) VALUES (?, ?)
     SQL
-    DB[:conn].execute(sql, name, type)
+    db[:conn].execute(sql, name, type)
   end
 end
